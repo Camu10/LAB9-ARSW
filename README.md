@@ -46,6 +46,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 * ¿Qué es serverless?
     * `Serverless:` Es un modelo de ejecución en el que el proveedor en la nube (AWS, Azure o Google Cloud) es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. Y cobrando solo por la cantidad de recursos utilizados para ejecutar el código. El código, generalmente, se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos, eventos programados (trabajos cron), etc.
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
+
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
     * Esto se debe a que Functions se basa en Azure Storage para operaciones como la administración de desencadenantes y el registro de ejecuciones de funciones. Algunas cuentas de almacenamiento no admiten colas y tablas. Estas cuentas incluyen cuentas de almacenamiento sólo para blob, Azure Premium Storage y cuentas de almacenamiento de uso general con replicación ZRS. 
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
