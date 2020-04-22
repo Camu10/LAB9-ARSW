@@ -63,12 +63,12 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
     * Esto se debe a que Functions se basa en Azure Storage para operaciones como la administración de desencadenantes y el registro de ejecuciones de funciones. Algunas cuentas de almacenamiento no admiten colas y tablas. Estas cuentas incluyen cuentas de almacenamiento sólo para blob, Azure Premium Storage y cuentas de almacenamiento de uso general con replicación ZRS. 
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
     * Azure Functions tiene tres planes de servicio diferentes:
-        * Plan de consumo: Cuando se usa el plan de consumo, las instancias del host de Azure Functions se agregan y quitan de forma dinámica según el número de eventos entrantes. Este plan sin servidor se escala automáticamente y solo se le cobra por los recursos de proceso cuando se ejecutan las funciones. En un plan de consumo, se agota el tiempo de espera de una ejecución.
+        * Plan de consumo: Cuando se usa el plan de consumo, las instancias del host de Azure Functions se agregan y quitan de forma dinámica según el número de eventos entrantes. Este plan sin servidor se escala automáticamente y solo se le cobra por los recursos de proceso cuando se ejecutan las funciones. En un plan de consumo, se agota el tiempo de espera de una ejecución.  
         **Ventajas:**
             * Pague solo cuando se ejecutan las funciones
             * Escale horizontalmente de forma automática, incluso durante períodos de gran carga
 
-        * Plan Premium: Cuando se usa el plan Prémium, las instancias del host de Azure Functions se agregan y quitan según el número de eventos entrantes al igual que con el plan de consumo.
+        * Plan Premium: Cuando se usa el plan Prémium, las instancias del host de Azure Functions se agregan y quitan según el número de eventos entrantes al igual que con el plan de consumo.  
         **Ventajas: Se puede utilizar bajo las siguientes situaciones**
             * Constancias permanentemente semiactivas para evitar cualquier inicio en frío
             * Conectividad de red virtual
@@ -77,7 +77,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
             * Precios más previsibles
             * Asignación de aplicaciones de alta densidad para planes con varias aplicaciones de funciones
 
-        * Plan Dedicado (App Service): Sus aplicaciones de funciones también pueden ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básica, estándar, prémium y aislada).
+        * Plan Dedicado (App Service): Sus aplicaciones de funciones también pueden ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básica, estándar, prémium y aislada).  
         **Ventajas: Se pueden utilizar bajo las siguientes situaciones**
             * Tiene máquinas virtuales infrautilizadas que ya ejecutan otras instancias de App Service.
             * Quiere proporcionar una imagen personalizada en la que ejecutar sus funciones.
