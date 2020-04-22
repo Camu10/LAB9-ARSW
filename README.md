@@ -43,13 +43,12 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
     ![](images/imag1.jpeg)
     ![](images/imag2.jpeg)
-* Cinco minutos despues:
+* Cinco minutos después:
 
     ![](images/imag3.jpeg)
-* Codigo memorizado:
+* Código memorizado:
 
     ![](images/Codigo.jpeg)
-
 
 **Preguntas**
 
@@ -58,6 +57,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 * ¿Qué es serverless?
     * `Serverless:` Es un modelo de ejecución en el que el proveedor en la nube (AWS, Azure o Google Cloud) es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. Y cobrando solo por la cantidad de recursos utilizados para ejecutar el código. El código, generalmente, se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos, eventos programados (trabajos cron), etc.
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
+    * `Runtime:` Es el intervalo de tiempo en el que un programa de computadora se ejecuta en un sistema operativo. En Azure esta principalmente está relacionado con la versión de .NET en la que se basa el tiempo de ejecución.
 
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
     * Esto se debe a que Functions se basa en Azure Storage para operaciones como la administración de desencadenantes y el registro de ejecuciones de funciones. Algunas cuentas de almacenamiento no admiten colas y tablas. Estas cuentas incluyen cuentas de almacenamiento sólo para blob, Azure Premium Storage y cuentas de almacenamiento de uso general con replicación ZRS. 
@@ -82,6 +82,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
             * Tiene máquinas virtuales infrautilizadas que ya ejecutan otras instancias de App Service.
             * Quiere proporcionar una imagen personalizada en la que ejecutar sus funciones.
 * ¿Por qué la memoization falla o no funciona de forma correcta?
+    * La memorización no funcionó correctamente debido a que después de un lapso de tiempo de no hacer ninguna petición en este caso cinco minutos esta memorización ya hecha se borro teniendo asi que volver a calcular la respuesta para el valor ingresado.
 
 * ¿Cómo funciona el sistema de facturación de las Function App?
     * `Ejecuciones:` Functions se factura según el número total de ejecuciones solicitadas cada mes para todas las funciones. Las ejecuciones se cuentan cada vez que se ejecuta una función en respuesta a un evento, desencadenado por un enlace. El primer millón de ejecuciones es gratis cada mes.
