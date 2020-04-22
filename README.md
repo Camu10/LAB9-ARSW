@@ -39,6 +39,18 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
 
+* Iniciales: 
+
+    ![](images/imag1.jpeg)
+    ![](images/imag2.jpeg)
+* Cinco minutos despues:
+
+    ![](images/imag3.jpeg)
+* Codigo memorizado:
+
+    ![](images/Codigo.jpeg)
+
+
 **Preguntas**
 
 * ¿Qué es un Azure Function?
@@ -58,7 +70,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
         * Plan Premium: Cuando se usa el plan Prémium, las instancias del host de Azure Functions se agregan y quitan según el número de eventos entrantes al igual que con el plan de consumo.
         **Ventajas: Se puede utilizar bajo las siguientes situaciones**
-            * nstancias permanentemente semiactivas para evitar cualquier inicio en frío
+            * Constancias permanentemente semiactivas para evitar cualquier inicio en frío
             * Conectividad de red virtual
             * Duración de la ejecución ilimitada (60 minutos garantizados)
             * Tamaños de la instancia Prémium (un núcleo, dos núcleos y cuatro instancias de núcleo)
